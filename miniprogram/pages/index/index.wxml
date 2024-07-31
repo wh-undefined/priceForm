@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<scroll-view class="scrollarea" scroll-y type="list">
+  <view class="container">
+    <view class="beforePrice">
+       <block>
+          <view class="priceInfo">
+            <input type="digit" class="inputStyle" value="{{subjectPrice}}" bindinput="getPrice" placeholder="请输入物品价格"/><text class="alignHeight">元</text>
+          </view>
+          <view class="priceInfo">
+            <input type="number" class="inputStyle" value = "{{subjectWeight}}" bindinput="getWeight" placeholder="请输入物品重量"/>
+            <picker mode = "selector" range = "{{unitRange}}" value = "{{unit}}" bindchange = "onChangeUnit" class = "pricePicker">
+              <view class="alignHeight">
+                <text>{{unitRange[unit]}}</text>
+                <view class="triangle"></view>
+              </view>
+              <view class="alignHeight">
+               
+              </view>
+            </picker>
+          </view>
+       </block>
+       <button type ="primary" bindtap="changePrice">换算</button>
+    </view>
+
+    <view class="afterPrice">
+      <text class="afterPriceFont">{{currentPrice}}</text><text>元/斤</text>
+    </view>
+  </view>
+</scroll-view>

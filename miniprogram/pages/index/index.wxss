@@ -1,0 +1,48 @@
+/**index.wxss**/
+page {
+  height: 100vh;
+}
+.beforePrice{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20%;
+}
+.priceInfo{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 0;
+}
+button{
+  margin-top: 25%;
+}
+.pricePicker{
+  display: inline-block;
+}
+.inputStyle{
+  border: solid #054926 1px;
+  display: inline-block;
+  width: 77%;
+  padding-left:20rpx;
+  margin-left: 10rpx;
+  height: 8vh;
+}
+.triangle{
+  width: 0px;
+  height: 0px;
+  border:6px solid transparent;
+  border-top-color:#054926 ;
+  float: right;
+  margin-top:4vh;
+  margin-left: 2px;
+}
+.afterPriceFont{
+  color: #012501;
+  font-size: 25px
+}
+.alignHeight{
+  height: 8vh;
+  line-height: 8vh;
+}
